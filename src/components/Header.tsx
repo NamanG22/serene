@@ -22,6 +22,12 @@ export default function Header() {
                   Home
                 </Link>
                 <Link
+                  href="/marketplace"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition-all"
+                  >
+                  Marketplace
+                </Link>
+                <Link
                   href="/about"
                   className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition-all"
                 >
