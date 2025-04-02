@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-
+import Link from 'next/link'
 export default function Home() {
   return (
     <>
@@ -27,15 +27,15 @@ export default function Home() {
                     and powerful backend capabilities.
                   </p>
                   <div className="mt-10 flex items-start gap-x-6">
-                    <a
+                    <Link
                       href="/marketplace"
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Find Photographers
-                    </a>
-                    <a href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-md px-3 py-2">
+                    </Link>
+                    <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-md px-3 py-2">
                       Learn more <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -68,12 +68,12 @@ export default function Home() {
                 Join us in building the next generation of web applications with our powerful and intuitive platform.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <Link
                   href="/dashboard"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   View Dashboard
-                </a>
+                </Link>
               </div>
             </div>
           </div>

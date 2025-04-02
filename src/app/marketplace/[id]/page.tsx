@@ -46,7 +46,7 @@ const photographer = {
   ],
 }
 
-export default function PhotographerDetail({ params }: { params: { id: string } }) {
+export default function PhotographerDetail() {
   const [selectedService, setSelectedService] = useState<string | null>(null)
 
   return (
