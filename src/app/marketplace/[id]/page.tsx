@@ -47,8 +47,6 @@ const photographer = {
 }
 
 export default function PhotographerDetail() {
-  const [selectedService, setSelectedService] = useState<string | null>(null)
-
   return (
     <>
       <Header />
@@ -137,7 +135,6 @@ export default function PhotographerDetail() {
                     <p className="text-sm text-gray-600">{service.duration}</p>
                   </div>
                   <button
-                    onClick={() => setSelectedService(service.name)}
                     className="mt-4 w-full rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500"
                   >
                     Book Now
