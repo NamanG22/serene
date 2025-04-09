@@ -80,7 +80,7 @@ export default function Marketplace() {
       <div className='bg-white w-full h-screen z-20'>
         
       </div>
-      {/* <main className="min-h-screen bg-gray-50 pt-16">
+      <main className="min-h-screen bg-gray-50 pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8 space-y-4">
             <div className="flex items-center gap-4">
@@ -154,7 +154,7 @@ export default function Marketplace() {
             ))}
           </div>
         </div>
-      </main> */}
+      </main>
     </>
   )
 } 

@@ -22,7 +22,7 @@ export default function Login() {
       console.log('Login attempt:', { email, password })
       router.push('/dashboard')
     } catch (err) {
-      setError('Invalid email or password')
+      setError('Invalid email or password'+err)
     } finally {
       setIsLoading(false)
     }
