@@ -61,9 +61,27 @@ export default function Marketplace() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gray-50 pt-16">
+      <div className='absolute top-0 left-0 w-full h-[50%] z-10 rounded-b-3xl'>
+        <img 
+          src="/marketHero2.jpg" 
+          alt="background" 
+          className='w-full h-full object-cover object-[100%_60%] rounded-b-3xl' 
+        />
+        <div className='absolute bottom-[34%] left-28 z-10'>
+          <h1 className='flex flex-col text-4xl font-bold'>
+            Welcome to <span className='text-6xl'>Marketplace</span>
+          </h1>
+          <p className='text-gray-500'>
+            Browse through our curated list of photographers and studios to find the perfect fit for your event.
+          </p>
+        </div>
+      </div>
+
+      <div className='bg-white w-full h-screen z-20'>
+        
+      </div>
+      {/* <main className="min-h-screen bg-gray-50 pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-          {/* Search and Filters */}
           <div className="mb-8 space-y-4">
             <div className="flex items-center gap-4">
               <div className="flex-1">
@@ -96,7 +114,6 @@ export default function Marketplace() {
               </select>
             </div>
             
-            {/* Specialty Tags */}
             <div className="flex flex-wrap gap-2">
               {specialtyOptions.map((specialty) => (
                 <button
@@ -120,7 +137,6 @@ export default function Marketplace() {
             </div>
           </div>
 
-          {/* Results Grid */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredPhotographers.map((photographer) => (
               <PhotographerCard
@@ -138,7 +154,7 @@ export default function Marketplace() {
             ))}
           </div>
         </div>
-      </main>
+      </main> */}
     </>
   )
 } 

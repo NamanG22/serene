@@ -10,48 +10,40 @@ export default function Home() {
       </div>
       {/* Hero Section */}
       <div className='absolute top-0 left-0 w-full h-screen z-10'>
-        <div className='flex h-screen'>
-          {/* Left side with text */}
-          <div className="bg-black w-1/2 relative">
-            {/* Gradient fade from right edge */}
-            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-r from-transparent to-black" />
-            
-            <div className="relative isolate px-6 pt-14 lg:px-8">
-              <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                <div className="text-left">
-                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                    Welcome to Serene
-                  </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    A modern full-stack application built with Next.js, featuring a beautiful UI
-                    and powerful backend capabilities.
-                  </p>
-                  <div className="mt-10 flex items-start gap-x-6">
-                    <Link
-                      href="/marketplace"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Find Photographers
-                    </Link>
-                    <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-md px-3 py-2">
-                      Learn more <span aria-hidden="true">→</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className='w-full h-screen'>
+          <div className='w-full h-full'>
+            <img 
+              src="/background5.jpg" 
+              alt="heroimage"
+              className="w-full h-full object-cover"
+            />
           </div>
+        </div>
 
-          {/* Right side with image */}
-          <div className='w-1/2 relative'>
-            {/* Gradient fade from left edge */}
-            <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-l from-transparent to-black z-10" />
-            <div className="h-full relative">
-              <img 
-                src="/heroimage.jpg" 
-                alt="heroimage"
-                className="w-full h-full object-cover"
-              />
+        <div className="absolute bottom-20 isolate pl-6 pt-14 lg:pl-16 self-end">
+          <div className="mx-auto max-w-2xl">
+            <div className="text-left">
+              <p className="my-4 text-sm leading-8 text-white/70">
+                by Naman
+              </p>
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Welcome to Serene
+              </h1>
+              <p className="mt-6 text-md leading-8 text-black">
+                A modern full-stack application built with Next.js, featuring a beautiful UI
+                and powerful backend capabilities.
+              </p>
+              <div className="mt-10 flex items-start gap-x-6">
+                {/* <Link
+                  href="/marketplace"
+                  className="rounded-4xl text-lg bg-indigo-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Explore
+                </Link> */}
+                <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
+                  Learn more
+                </Link>
+              </div>
             </div>
           </div>
         </div>
