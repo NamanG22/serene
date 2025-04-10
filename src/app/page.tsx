@@ -9,8 +9,8 @@ export default function Home() {
       <div className="w-full h-screen z-0 fixed top-0 left-0">
         <img className="w-full h-full object-cover" src="/background.jpg" alt="background" />
       </div>
+      
       <HomeHero/>
-      {/* <div className='relative bg-gray-900 h-[200px] z-10'></div> */}
       <Browse/>
       <div className='h-[300px]'></div>
       <Footer />
