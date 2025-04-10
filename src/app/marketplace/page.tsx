@@ -59,28 +59,28 @@ export default function Marketplace() {
   });
 
   return (
-    <>
+    <div className='bg-[#ebefea] w-full h-screen'>
       <Header />
-      <div className='absolute top-0 left-0 w-full h-[50%] z-10 rounded-b-3xl'>
+      <div className='absolute top-0 left-0 w-full h-[50%] z-10 rounded-b-4xl shadow-lg'>
         <img 
           src="/marketHero2.jpg" 
           alt="background" 
-          className='w-full h-full object-cover object-[100%_60%] rounded-b-3xl' 
+          className='w-full h-full object-cover object-[100%_60%] rounded-b-4xl' 
         />
-        <div className='absolute bottom-[34%] left-28 z-10'>
-          <h1 className='flex flex-col text-4xl font-bold'>
+        <div className='absolute bottom-[15%] left-28 z-10 space-y-4'>
+          <p className='text-white/70'>
+            by NG
+          </p>
+          <h1 className='flex flex-col text-4xl font-bold text-white'>
             Welcome to <span className='text-6xl'>Marketplace</span>
           </h1>
-          <p className='text-gray-500'>
-            Browse through our curated list of photographers and studios to find the perfect fit for your event.
+          <p className='text-white'>
+            Browse through our curated list of photographers and studios.
           </p>
         </div>
       </div>
 
-      <div className='bg-white w-full h-screen z-20'>
-        
-      </div>
-      <main className="min-h-screen bg-gray-50 pt-16">
+      <main className="absolute top-[50%] left-0 right-0">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8 space-y-4">
             <div className="flex items-center gap-4">
@@ -137,24 +137,35 @@ export default function Marketplace() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredPhotographers.map((photographer) => (
-              <PhotographerCard
-                key={photographer.id}
-                id={photographer.id}
-                name={photographer.name}
-                type={photographer.type as "studio" | "individual"}
-                specialties={photographer.specialties}
-                rating={photographer.rating}
-                reviewCount={photographer.reviewCount}
-                imageUrl={photographer.imageUrl}
-                location={photographer.location}
-                priceRange={photographer.priceRange}
-              />
-            ))}
+          <div className='flex space-x-8'>
+
+            <div className='w-1/3'>
+              <div className='bg-white rounded-lg p-4'>
+                <h2 className='text-lg font-bold'>Filters</h2>
+              </div>
+            </div>
+
+            <div className="w-2/3 flex">
+              {filteredPhotographers.map((photographer) => (
+                <PhotographerCard
+                  key={photographer.id}
+                  id={photographer.id}
+                  name={photographer.name}
+                  type={photographer.type as "studio" | "individual"}
+                  specialties={photographer.specialties}
+                  rating={photographer.rating}
+                  reviewCount={photographer.reviewCount}
+                  imageUrl={photographer.imageUrl}
+                  location={photographer.location}
+                  priceRange={photographer.priceRange}
+                />
+              ))}
+            </div>
+
           </div>
+
         </div>
       </main>
-    </>
+    </div>
   )
 } 

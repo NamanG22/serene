@@ -4,17 +4,14 @@ import { GoHomeFill } from "react-icons/go";
 export default function Header() {
   return (
     <>
-      {/* Spacer div to prevent content from going under fixed header */}
-      <div className="h-16" />
-      
       {/* Fixed header */}
-      <header className="fixed top-0 left-0 right-0 shadow-sm z-50">
+      <header className="fixed top-0 left-0 right-0 z-50">
         <nav className="mx-auto px-12 sm:px-16 lg:px-28">
           <div className="justify-between py-6 space-y-4">
             <div className="flex items-center justify-between">
               <div className="flex">
                 <Link href="/" className="flex items-center">
-                  <span className="text-2xl font-bold text-white">Serene</span>
+                  <span className="text-[28px] font-bold text-white">Serene</span>
                 </Link>         
               </div>
               <div className="flex items-center">
@@ -36,13 +33,13 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/marketplace"
-                  className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:border-b-2 transition-all"
+                  className="inline-flex items-center px-1 pt-1 text-[14px] text-white hover:border-b-2 transition-all"
                 >
                   Marketplace
                 </Link>
                 <Link
                   href="/about"
-                  className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:border-b-2 transition-all"
+                  className="inline-flex items-center px-1 pt-1 text-[14px] text-white hover:border-b-2 transition-all"
                 >
                   About
                 </Link>
