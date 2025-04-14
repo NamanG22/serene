@@ -32,8 +32,8 @@ export default function Review() {
                 
               </div>
               <p className="mt-2 text-gray-600">
-                "Absolutely amazing experience! The service was top-notch and exceeded all my expectations. 
-                I would highly recommend this to anyone looking for quality and reliability."
+              `&#34;`Absolutely amazing experience! The service was top-notch and exceeded all my expectations. 
+                I would highly recommend this to anyone looking for quality and reliability.
               </p>
               <p className="mt-2 text-sm text-gray-500">Posted on August 12, 2023</p>
             </div>
