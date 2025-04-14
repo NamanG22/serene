@@ -1,36 +1,36 @@
 export default function Products(){
-    const services = [
-        {
-            title: "Wedding Photography",
-            image: "/wedding.jpg",
-            description: "Capturing your special moments with elegance"
-        },
-        {
-            title: "Portrait Sessions",
-            image: "/portrait.jpg",
-            description: "Professional portraits that tell your story"
-        },
-        {
-            title: "Event Coverage",
-            image: "/event.jpg",
-            description: "Documenting your events with style"
-        },
-        {
-            title: "Family Photography",
-            image: "/family.jpg",
-            description: "Beautiful family moments frozen in time"
-        },
-        {
-            title: "Commercial Shoots",
-            image: "/commercial.jpg",
-            description: "Professional imagery for your business"
-        },
-        {
-            title: "Nature & Landscape",
-            image: "/landscape.jpg",
-            description: "Capturing the beauty of the natural world"
-        }
-    ];
+    // const services = [
+    //     {
+    //         title: "Wedding Photography",
+    //         image: "/wedding.jpg",
+    //         description: "Capturing your special moments with elegance"
+    //     },
+    //     {
+    //         title: "Portrait Sessions",
+    //         image: "/portrait.jpg",
+    //         description: "Professional portraits that tell your story"
+    //     },
+    //     {
+    //         title: "Event Coverage",
+    //         image: "/event.jpg",
+    //         description: "Documenting your events with style"
+    //     },
+    //     {
+    //         title: "Family Photography",
+    //         image: "/family.jpg",
+    //         description: "Beautiful family moments frozen in time"
+    //     },
+    //     {
+    //         title: "Commercial Shoots",
+    //         image: "/commercial.jpg",
+    //         description: "Professional imagery for your business"
+    //     },
+    //     {
+    //         title: "Nature & Landscape",
+    //         image: "/landscape.jpg",
+    //         description: "Capturing the beauty of the natural world"
+    //     }
+    // ];
 
     return(
         <section className='relative bg-black min-h-screen py-20 px-6 -mt-50'>
