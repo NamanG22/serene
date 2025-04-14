@@ -74,7 +74,8 @@ export default function Browse(){
                 </div>
             </div>
             {/* <div className='w-1/2 flex space-x-8 justify-center'>
-                <div className='w-[25%]'>
+            
+                <div className=''>
                     <div className='mt-8 w-full h-[60%] rounded-[80px] bg-cover' style={{ backgroundImage: 'url("/wedding.jpg")', backgroundPosition: '47% center' }}></div>
                     <div className='mt-4 w-full h-[45%] rounded-[80px] bg-cover' style={{ backgroundImage: 'url("/wedding.jpg")', backgroundPosition: 'top center' }}></div>
                 </div>
@@ -85,14 +86,15 @@ export default function Browse(){
                 <div className='w-[25%]'>
                     <div className='mt-24 w-full h-[70%] rounded-[80px] bg-cover' style={{ backgroundImage: 'url("/wedding.jpg")', backgroundPosition: '60% center' }}></div>
                     <div className='mt-4 w-full h-[40%] rounded-[80px] bg-cover' style={{ backgroundImage: 'url("/wedding.jpg")', backgroundPosition: '40% center' }}></div>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                </div> */}
+                {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
                     {categories.map((category, idx) => (
                         <CategoryCard key={idx} icon={category.icon} name={category.name} />
                     ))}
-                </div>
-            </div> */}
+                </div> */}
+            {/* </div> */}
           </div>
+          
         </section>
     )
 }
