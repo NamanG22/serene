@@ -24,7 +24,7 @@ export default function Home() {
         <div className='flex flex-col items-center'>
           <div className='flex flex-col items-center'>
             <h1 className='text-white text-4xl font-bold'>How it works</h1>
-            <p>We've simplified the process of finding and booking photographers for your needs.</p>
+            <p>We have simplified the process of finding and booking photographers for your needs.</p>
           </div>
           <div className='flex flex-row justify-center w-full h-fit space-x-8 my-4'>
             <div className='w-[20%] h-full bg-white/40 rounded-lg text-center flex flex-col text-black font-bold text-xl shadow-md p-4'>
