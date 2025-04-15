@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -43,10 +46,20 @@ box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
 }
 
+.inbox-1{
+  background: url('/wedding.jpg') center/cover no-repeat;
+}
+
 .review-box{
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
 }
 
 .review-box-1{
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330') center/cover no-repeat;
+}
+.review-box-2{
+  background: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80') center/cover no-repeat;
+}
+.review-box-3{
+  background: url('https://randomuser.me/api/portraits/men/32.jpg') center/cover no-repeat;
 }

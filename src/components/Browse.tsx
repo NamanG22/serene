@@ -57,10 +57,10 @@ export default function Browse(){
                             <span>Capture</span> <span>Every Moment,</span> Your Way
                         </h1>
                         <p className="mt-4 text-md">
-                            Explore a range of photography and videography
+                        Professional photography for every occasion and need.
                         </p>
                         <p className="mt-4 text-md">
-                            services curated for every unique story.
+                        Find the perfect match for your specific requirements.
                         </p>
                         <div className="mt-10 flex items-start gap-x-6">
                         <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">

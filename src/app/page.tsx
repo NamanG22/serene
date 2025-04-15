@@ -39,27 +39,30 @@ export default function Home() {
                         <span>How it works</span>
                     </h1>
                     <p className="mt-4 text-md">
-                    Hear from clients and photographers who have found success on our platform.
+                    We&apos;ve simplified the process of finding and booking photographers for your needs.
                     </p>
                 </div>
             </div>
             <div className='w-full flex items-center space-x-4 justify-center mt-12'>
-                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
-                        <div className='w-full h-[80%] inbox'></div>
-                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
+                    <div className='w-[300px] h-[330px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[55%] inbox'></div>
+                        <div className='w-full h-[45%] justify-center items-center flex flex-col text-black'>
+                            <h1 className={`${indieFlower.className} text-3xl indie-flower-regular`}>Search</h1>
+                            <p className={`${indieFlower.className} text-md text-center`}>Browse our marketplace of professional photographers and filter by location, specialty, and price.</p>
                         </div>
                     </div>
-                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
-                        <div className='w-full h-[80%] inbox'></div>
-                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
+                    <div className='w-[300px] h-[330px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[55%] inbox'></div>
+                        <div className='w-full h-[45%] justify-center items-center flex flex-col text-black'>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Connect</h1>
+                            <p className={`${indieFlower.className} text-md text-center px-4`}>View profiles, portfolios, and reviews to find the perfect match for your project.</p>
                         </div>
                     </div>
-                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
-                        <div className='w-full h-[80%] inbox'></div>
-                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
+                    <div className='w-[300px] h-[330px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[55%] inbox'></div>
+                        <div className='w-full h-[45%] justify-center items-center flex flex-col text-black'>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Book</h1>
+                            <p className={`${indieFlower.className} text-md text-center`}>Schedule and book your photography session with our secure and simple booking system.</p>
                         </div>
                     </div>
             </div>
