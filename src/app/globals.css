@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -45,9 +46,46 @@ body {
 
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.comic-neue-regular-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.comic-neue-bold-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 
 .box{
@@ -60,5 +98,13 @@ box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 1px 2px 2px 0px rgb(0, 0, 0,0.3);
   -moz-box-shadow: inset 1px 2px 2px 0px rgb(0, 0, 0,0.3);
   box-shadow: inset 1px 2px 2px 0px rgb(0, 0, 0, 0.3);
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+}
+
+.review-box{
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
+}
+
+.review-box-1{
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
 }

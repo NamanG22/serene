@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import HomeHero from '@/components/HomeHero'
 import Products from '@/components/Products'
 import Review from '@/components/Review'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -15,45 +16,55 @@ export default function Home() {
       <HomeHero/>
       <Browse/>
       <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-50'></div>
-      <div className='relative h-[300px] bg-black'></div>
       <div className='relative w-full h-[200px] bg-gradient-to-b from-black to-transparent z-10'></div>
       <Products/>
-      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-50'></div>
-      <div className='relative w-full h-[200px] bg-gradient-to-b from-black to-transparent z-10'></div>
-      <div className='relative h-fit z-60 -mt-20'>
-        <div className='flex flex-col items-center'>
-          <div className='flex flex-col items-center'>
-            <h1 className='text-white text-4xl font-bold'>How it works</h1>
-            <p>We have simplified the process of finding and booking photographers for your needs.</p>
-          </div>
-          <div className='flex flex-row justify-center w-full h-fit space-x-8 my-12'>
-            <div className='w-[20%] h-full bg-white/40 rounded-lg text-center flex flex-col text-black font-bold text-xl shadow-md p-4'>
-              <img src="/background.jpg" alt="search" className='h-1/2' />
-              <div className='flex flex-col items-start'>
-                <h1 className='text-white text-4xl permanent-marker-regular'>Search</h1>
-                <p className='text-white text-sm text-left mt-2'>Browse through our list of photographers and choose the one that best suits your needs.</p>
-              </div>
+      <div className='relative h-[680px]'>
+        <div className="absolute inset-0 w-full h-full z-0 bg-gradient-to-r from-[#3B1E54] to-[#9B7EBD]">
+          <img 
+            src="/product-bg-6.jpg" 
+            alt="browse background" 
+            className="w-full h-full object-cover object-[10%_100%]"
+          />
+          <div className="absolute inset-0" />
+        </div>
+        <div className="relative flex flex-col w-full h-fit px-28 items-center justify-center pt-8">
+            <div className='w-full flex items-center mx-auto justify-center'>
+                <div className="text-center">
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl flex flex-col leading-20">
+                        <span>How it works</span>
+                    </h1>
+                    <p className="mt-4 text-md">
+                    Hear from clients and photographers who have found success on our platform.
+                    </p>
+                </div>
             </div>
-            <div className='w-[20%] h-full bg-white/40 rounded-lg text-center flex flex-col text-black font-bold text-xl shadow-md p-4'>
-              <img src="/background.jpg" alt="search" className='h-1/2' />
-              <div className='flex flex-col items-start'>
-                <h1 className='text-white text-4xl permanent-marker-regular'>Search</h1>
-                <p className='text-white text-sm text-left mt-2'>Browse through our list of photographers and choose the one that best suits your needs.</p>
-              </div>
+            <div className='w-full flex items-center space-x-4 justify-center mt-12'>
+                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[80%] inbox'></div>
+                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
+                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                        </div>
+                    </div>
+                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[80%] inbox'></div>
+                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
+                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                        </div>
+                    </div>
+                    <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
+                        <div className='w-full h-[80%] inbox'></div>
+                        <div className='w-full h-[20%] justify-center items-center flex text-black'>
+                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                        </div>
+                    </div>
             </div>
-            <div className='w-[20%] h-full bg-white/40 rounded-lg text-center flex flex-col text-black font-bold text-xl shadow-md p-4'>
-              <img src="/background.jpg" alt="search" className='h-1/2' />
-              <div className='flex flex-col items-start'>
-                <h1 className='text-white text-4xl permanent-marker-regular'>Search</h1>
-                <p className='text-white text-sm text-left mt-2'>Browse through our list of photographers and choose the one that best suits your needs.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-20'></div>
+      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-50'></div>
       <div className='relative w-full h-[200px] bg-gradient-to-b from-black to-transparent z-10'></div>
       <Review/>
+      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-50'></div>
+      <div className='relative w-full h-[200px] bg-gradient-to-b from-black to-transparent z-10'></div>
       <Footer />
     </>
   )
