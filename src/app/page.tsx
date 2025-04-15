@@ -4,7 +4,6 @@ import Header from '@/components/Header'
 import HomeHero from '@/components/HomeHero'
 import Products from '@/components/Products'
 import Review from '@/components/Review'
-import Link from 'next/link'
 
 export default function Home() {
   return (
