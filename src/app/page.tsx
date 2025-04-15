@@ -26,7 +26,7 @@ export default function Home() {
             <h1 className='text-white text-4xl font-bold'>How it works</h1>
             <p>We have simplified the process of finding and booking photographers for your needs.</p>
           </div>
-          <div className='flex flex-row justify-center w-full h-fit space-x-8 my-4'>
+          <div className='flex flex-row justify-center w-full h-fit space-x-8 my-12'>
             <div className='w-[20%] h-full bg-white/40 rounded-lg text-center flex flex-col text-black font-bold text-xl shadow-md p-4'>
               <img src="/background.jpg" alt="search" className='h-1/2' />
               <div className='flex flex-col items-start'>
