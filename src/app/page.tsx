@@ -47,19 +47,19 @@ export default function Home() {
                     <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className={indieFlower.className}>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[300px] h-[310px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
             </div>

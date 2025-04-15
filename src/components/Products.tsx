@@ -1,3 +1,10 @@
+import { Indie_Flower } from 'next/font/google'
+
+const indieFlower = Indie_Flower({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+
 export default function Products(){
     // const services = [
     //     {
@@ -47,19 +54,19 @@ export default function Products(){
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                 </div>
@@ -67,19 +74,19 @@ export default function Products(){
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
                         <div className='w-full h-[80%] inbox'></div>
                         <div className='w-full h-[20%] justify-center items-center flex text-black'>
-                            <h1 className='indie-flower-regular text-3xl'>Signature Here</h1>
+                            <h1 className={`${indieFlower.className} text-3xl`}>Signature Here</h1>
                         </div>
                     </div>
                 </div>

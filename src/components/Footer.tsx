@@ -1,10 +1,17 @@
 import Link from 'next/link'
+import { Comic_Neue } from 'next/font/google'
+
+const comicNeue = Comic_Neue({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  style: ['normal', 'italic'],
+});
 
 export default function Footer() {
   return (
     <footer className="relative bg-gray-900 min-h-[80vh] -mt-50 px-28 pt-32">
       <div className="mx-auto w-full px-6 py-12 md:flex md:flex-col md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center comic-neue-regular text-[40vh] -my-15 w-full">
+        <div className={`${comicNeue.className} flex justify-center text-[40vh] -my-15 w-full`}>
           <h1>serene</h1>
         </div>
         <div className='flex space-x-4 self-start text-gray-400 my-4'>
