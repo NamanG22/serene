@@ -85,7 +85,7 @@ export default function Products(){
                         <div className='w-full h-[65%] inbox'></div>
                         <div className='w-full h-[35%] justify-center items-center flex flex-col text-black'>
                             <h1 className={`${indieFlower.className} text-3xl`}>Product Shots</h1>
-                            <p className={`${indieFlower.className} text-md text-center px-4`}>Elevate your product with professional photography that showcases your brand's unique features and quality.</p>
+                            <p className={`${indieFlower.className} text-md text-center px-4`}>Elevate your product with professional photography that showcases your brand&apos;s unique features and quality.</p>
                         </div>
                     </div>
                     <div className='w-[350px] h-[400px] bg-white box flex flex-col px-5 pt-5'>
