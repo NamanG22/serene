@@ -5,16 +5,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Comic_Neue, Indie_Flower, Merriweather } from 'next/font/google'
 
-const indieFlower = Indie_Flower({
-  subsets: ['latin'],
-  weight: ['400'],
-});
-
-const comicNeue = Comic_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-});
-
 const merriweather = Merriweather({
   subsets: ['latin'],
   weight: ['400'],
@@ -149,7 +139,7 @@ export default function Login() {
 
           </div>
           <div className="mx-auto text-black text-center space-y-4">
-            <p className="text-sm">Don't have an account? <Link href="/register" className="font-bold hover:text-indigo-500">Sign Up</Link></p>
+            <p className="text-sm">Don&apos;t have an account? <Link href="/register" className="font-bold hover:text-indigo-500">Sign Up</Link></p>
             <p className="text-sm">Back to <Link href="/" className="font-bold hover:text-indigo-500">Home</Link></p>
           </div>
         </div>
