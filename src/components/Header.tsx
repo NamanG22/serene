@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { GoHomeFill } from "react-icons/go";
 
 export default function Header() {
   return (
