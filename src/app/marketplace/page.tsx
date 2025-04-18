@@ -1,11 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Header from '@/components/Header'
 import { RiSearchFill } from "react-icons/ri";
 import { FaCaretRight } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosPricetags } from "react-icons/io";
+import { IoMdStar } from "react-icons/io";
 import Link from 'next/link';
-// Mock data - replace with actual API call
+// Mock data - move outside component to ensure consistency
 const photographers = [
   {
     id: '1',
@@ -17,6 +20,7 @@ const photographers = [
     imageUrl: '/studio1.jpg',
     location: 'New York, NY',
     priceRange: '$500-$2000',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut. ',
   },
   {
     id: '2',
@@ -28,6 +32,7 @@ const photographers = [
     imageUrl: '/photographer1.jpg',
     location: 'Los Angeles, CA',
     priceRange: '$200-$800',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.',
   },
   // Add more mock data as needed
 ]
@@ -43,21 +48,72 @@ const photographers = [
 //   'Real Estate',
 // ]
 
+// Pre-sort photographers for leaderboard to ensure consistency
+const sortedPhotographers = [...photographers].sort((a, b) => b.rating - a.rating);
+const topIndividuals = photographers
+  .filter((photographer) => photographer.type === 'individual')
+  .sort((a, b) => b.rating - a.rating);
+
 export default function Marketplace() {
   const [searchQuery, setSearchQuery] = useState('')
-  // const [selectedType, setSelectedType] = useState<string>('all')
-  // const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([])
+  const [selectedType, setSelectedType] = useState<string>('all')
+  const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([])
   // const [priceRange, setPriceRange] = useState<string>('all')
 
-  // const filteredPhotographers = photographers.filter((photographer) => {
-  //   const matchesSearch = photographer.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-  //     photographer.location.toLowerCase().includes(searchQuery.toLowerCase());
-  //   const matchesType = selectedType === 'all' || photographer.type === selectedType;
-  //   const matchesSpecialties = selectedSpecialties.length === 0 ||
-  //     photographer.specialties.some((s) => selectedSpecialties.includes(s));
-  //   // Add price range filtering logic
-  //   return matchesSearch && matchesType && matchesSpecialties;
-  // });
+  // Move filtering logic into useMemo to prevent recalculation during render
+  const filteredPhotographers = useMemo(() => {
+    return photographers.filter((photographer) => {
+      const matchesSearch = photographer.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        photographer.location.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesType = selectedType === 'all' || photographer.type === selectedType;
+      const matchesSpecialties = selectedSpecialties.length === 0 ||
+        photographer.specialties.some((s) => selectedSpecialties.includes(s));
+      // Add price range filtering logic
+      return matchesSearch && matchesType && matchesSpecialties;
+    });
+  }, [searchQuery, selectedType, selectedSpecialties]);
+
+  // Photographer card component to ensure consistent structure
+  const PhotographerCard = ({ photographer }: { photographer: typeof photographers[0] }) => (
+    <div className="bg-white h-46 rounded-xl p-2 shadow-sm flex gap-6">
+      <div className="w-1/3 bg-black rounded-xl" />
+      <div className="w-2/3 space-y-3 grid">
+        <div className="flex justify-between items-start">
+          <div className="flex justify-center items-center">
+            <h2 className="text-lg font-semibold">{photographer.name}</h2>
+          </div>
+          <div className="flex justify-center items-center">
+            <span className="text-gray-600 text-[13px]">{photographer.rating}</span>
+            <IoMdStar className="text-gray-600 text-lg -mt-0.5" />
+            <span className="text-gray-600 text-[13px]">({photographer.reviewCount} reviews)</span>
+          </div>
+        </div>
+        <div className="flex space-x-4 text-[12px]">
+          <div className="flex flex-col border-r-1 flex-none space-y-2 pr-3 border-gray-200">
+            <div className="flex items-center gap-2">
+              <FaLocationDot className="text-gray-600" />
+              <p className="text-gray-600">{photographer.location}</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <IoIosPricetags className="text-gray-600" />
+              <p className="text-gray-600 tracking-wide">{photographer.priceRange}</p>
+            </div>
+          </div>
+          <div className="w-full flex-auto">
+            <p className="text-gray-600 text-[12px]">{photographer.description}</p>
+          </div>
+        </div>
+        <div className="w-full">
+          <p className="text-gray-600 text-[12px]">Tags: {photographer.specialties.join(', ')}</p>
+        </div>
+        <div className="w-full self-end">
+          <button className="bg-[#ebefea] text-black px-4 py-3 rounded-lg w-full text-[12px] hover:bg-gray-200">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className='bg-[#ebefea] min-h-screen w-full'>
@@ -155,67 +211,65 @@ export default function Marketplace() {
 
             {/* Photographer Cards */}
             <div className="space-y-4">
-              {/* {filteredPhotographers.map((photographer) => (
-                <div key={photographer.id} className="bg-white h-46 rounded-xl p-2 shadow-sm flex gap-6">
-                  <div className="w-1/3 bg-black rounded-xl">
-                    <img
-                      src={photographer.imageUrl}
-                      alt={photographer.name}
-                      className="w-full h-auto object-cover rounded-lg"
-                    />
-                  </div>
-                  <div className="w-2/3 space-y-3 flex flex-col">
-                    <div className="flex justify-between items-start">
-                      <div className='flex justify-center items-center'>
-                        <h2 className="text-lg font-semibold ">{photographer.name}</h2>
-                        <p className='text-gray-600 px-2'>|</p>
-                        <p className="text-gray-600 text-sm">{photographer.location}</p>
-                      </div>
-                      <span className="text-gray-600">{photographer.priceRange}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-yellow-500">★</span>
-                      <span>{photographer.rating}</span>
-                      <span className="text-gray-500">({photographer.reviewCount} reviews)</span>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {photographer.specialties.map((specialty) => (
-                        <span
-                          key={specialty}
-                          className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                        >
-                          {specialty}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))} */}
+              {filteredPhotographers.map((photographer) => (
+                <PhotographerCard key={photographer.id} photographer={photographer} />
+              ))}
             </div>
           </div>
 
           {/* Leaderboard Section (1/3) */}
           <div className="w-1/3">
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h2 className="text-xl font-bold mb-4">Top Photographers</h2>
+              <div className='flex justify-between items-center mb-4'>
+                <h2 className="text-xl font-bold">Leaderboard</h2>
+                <div className='flex items-center'>
+                  <Link href='/' className='text-gray-600 text-xs'>View All</Link>
+                  <FaCaretRight className='text-gray-600 text-lg' />
+                </div>
+              </div>
+              <div className='flex items-center gap-2 mt-4 mb-2'>
+                <p className='text-gray-600 text-xs'>Highest Rated</p>
+              </div>
               <div className="space-y-4">
-                {photographers
-                  .sort((a, b) => b.rating - a.rating)
-                  .slice(0, 5)
-                  .map((photographer, index) => (
-                    <div key={photographer.id} className="flex items-center gap-4 p-2 hover:bg-gray-50 rounded-lg">
-                      <span className="text-2xl font-bold text-gray-400">#{index + 1}</span>
-                      <div className="flex-1">
-                        <h3 className="font-semibold">{photographer.name}</h3>
-                        <div className="flex items-center text-sm text-gray-600">
-                          <span className="text-yellow-500">★</span>
-                          <span>{photographer.rating}</span>
-                          <span className="mx-1">•</span>
-                          <span>{photographer.reviewCount} reviews</span>
-                        </div>
+                {sortedPhotographers.slice(0, 5).map((photographer, index) => (
+                  <Link
+                    href={`/marketplace/${photographer.id}`}
+                    key={photographer.id}
+                    className="flex items-center gap-4 p-2 hover:bg-gray-100 rounded-lg"
+                  >
+                    <span className="text-2xl font-bold text-gray-400">#{index + 1}</span>
+                    <div className="flex-1">
+                      <h3 className="font-semibold">{photographer.name}</h3>
+                      <div className="flex items-center text-sm text-gray-600">
+                        <span>{photographer.rating}</span>
+                        <IoMdStar className="text-gray-600 text-lg -mt-0.5" />
+                        <span>({photographer.reviewCount} reviews)</span>
                       </div>
                     </div>
-                  ))}
+                  </Link>
+                ))}
+              </div>
+              <div className='flex items-center gap-2 mt-4 mb-2'>
+                <p className='text-gray-600 text-xs'>Top Individuals</p>
+              </div>
+              <div className="space-y-4">
+                {topIndividuals.slice(0, 5).map((photographer, index) => (
+                  <Link
+                    href={`/marketplace/${photographer.id}`}
+                    key={photographer.id}
+                    className="flex items-center gap-4 p-2 hover:bg-gray-100 rounded-lg"
+                  >
+                    <span className="text-2xl font-bold text-gray-400">#{index + 1}</span>
+                    <div className="flex-1">
+                      <h3 className="font-semibold">{photographer.name}</h3>
+                      <div className="flex items-center text-sm text-gray-600">
+                        <span>{photographer.rating}</span>
+                        <IoMdStar className="text-gray-600 text-lg -mt-0.5" />
+                        <span>({photographer.reviewCount} reviews)</span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
