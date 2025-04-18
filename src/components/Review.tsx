@@ -19,11 +19,11 @@ export default function Review() {
                         Hear from our users about their experience with Serene.
                     </p>
                     <div className="mt-10 flex items-start gap-x-6">
-                    <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
-                        Explore marketplace
+                    <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
+                        Contact
                     </Link>
-                    <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
-                        About us
+                    <Link href="/marketplace" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
+                        Try yourself
                     </Link>
                     </div>
                 </div>

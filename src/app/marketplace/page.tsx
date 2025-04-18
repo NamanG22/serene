@@ -69,7 +69,7 @@ export default function Marketplace() {
         />
         <div className='absolute bottom-[15%] left-28 z-10 space-y-4'>
           <p className='text-white/70'>
-            by NG
+            by Nova
           </p>
           <h1 className='flex flex-col text-4xl font-bold text-white'>
             Welcome to <span className='text-6xl'>Marketplace</span>

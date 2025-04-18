@@ -49,7 +49,38 @@ box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
 .inbox-1{
   background: url('/wedding.jpg') center/cover no-repeat;
 }
+.inbox-2{
+  background: url('/event-2.jpg') center/cover no-repeat;
+}
+.inbox-3{
+  background: url('/ph.jpg') center/cover no-repeat;
+  background-position: 0 0;
+}
+.inbox-4{
+  background: url('/ccs.jpg') center/cover no-repeat;
+}
+.inbox-5{
+  background: url('/product.jpg') center/cover no-repeat;
+}
+.inbox-6{
+  background: url('/custom.jpg') center/cover no-repeat;
+  background-position: 0 30%;
+}
+.inbox-7{
+  background: url('/search.jpg') center/cover no-repeat;
 
+}
+.inbox-8{
+  background: url('/connect.jpg') center/cover no-repeat;
+
+}
+.inbox-9{
+  background: url('/book.jpg') center/cover no-repeat;
+  background-position: 0 30%;
+}
+.login-box{
+  background: url('/login-bg.jpg') center/cover no-repeat;
+}
 .review-box{
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover no-repeat;
 }

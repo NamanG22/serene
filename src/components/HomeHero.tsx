@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+'use client'
 export default function HomeHero(){
     return(
         <div className='relative mt-0 w-full max-h-screen z-10'>
@@ -32,9 +31,14 @@ export default function HomeHero(){
                         >
                         Explore
                         </Link> */}
-                        <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
-                        Learn more
-                        </Link>
+                        <button 
+                          onClick={() => {
+                            document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+                          }} 
+                          className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white hover:bg-gray-50 transition-colors"
+                        >
+                          Learn more
+                        </button>
                     </div>
                     </div>
                 </div>
