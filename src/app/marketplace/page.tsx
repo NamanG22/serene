@@ -37,16 +37,16 @@ const photographers = [
   // Add more mock data as needed
 ]
 
-// const specialtyOptions = [
-//   'Wedding',
-//   'Portrait',
-//   'Commercial',
-//   'Nature',
-//   'Events',
-//   'Fashion',
-//   'Product',
-//   'Real Estate',
-// ]
+const specialtyOptions = [
+  'Wedding',
+  'Portrait',
+  'Commercial',
+  'Nature',
+  'Events',
+  'Fashion',
+  'Product',
+  'Real Estate',
+]
 
 // Pre-sort photographers for leaderboard to ensure consistency
 const sortedPhotographers = [...photographers].sort((a, b) => b.rating - a.rating);
@@ -58,7 +58,7 @@ export default function Marketplace() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedType, setSelectedType] = useState<string>('all')
   const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([])
-  // const [priceRange, setPriceRange] = useState<string>('all')
+  const [priceRange, setPriceRange] = useState<string>('all')
 
   // Move filtering logic into useMemo to prevent recalculation during render
   const filteredPhotographers = useMemo(() => {
@@ -163,7 +163,7 @@ export default function Marketplace() {
             </div>
 
             {/* Filters Section */}
-            {/* <div className="bg-white rounded-xl p-6 shadow-sm space-y-4">
+            <div className="bg-white rounded-xl p-6 shadow-sm space-y-4">
               <div className="flex gap-4">
                 <select
                   className="rounded-lg border border-gray-300 px-4 py-2 focus:border-indigo-500 focus:outline-none"
@@ -207,7 +207,7 @@ export default function Marketplace() {
                   </button>
                 ))}
               </div>
-            </div> */}
+            </div>
 
             {/* Photographer Cards */}
             <div className="space-y-4">
