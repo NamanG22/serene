@@ -45,19 +45,19 @@ const photographers = [
 
 export default function Marketplace() {
   const [searchQuery, setSearchQuery] = useState('')
-  const [selectedType, setSelectedType] = useState<string>('all')
-  const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([])
-  const [priceRange, setPriceRange] = useState<string>('all')
+  // const [selectedType, setSelectedType] = useState<string>('all')
+  // const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([])
+  // const [priceRange, setPriceRange] = useState<string>('all')
 
-  const filteredPhotographers = photographers.filter((photographer) => {
-    const matchesSearch = photographer.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      photographer.location.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesType = selectedType === 'all' || photographer.type === selectedType;
-    const matchesSpecialties = selectedSpecialties.length === 0 ||
-      photographer.specialties.some((s) => selectedSpecialties.includes(s));
-    // Add price range filtering logic
-    return matchesSearch && matchesType && matchesSpecialties;
-  });
+  // const filteredPhotographers = photographers.filter((photographer) => {
+  //   const matchesSearch = photographer.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //     photographer.location.toLowerCase().includes(searchQuery.toLowerCase());
+  //   const matchesType = selectedType === 'all' || photographer.type === selectedType;
+  //   const matchesSpecialties = selectedSpecialties.length === 0 ||
+  //     photographer.specialties.some((s) => selectedSpecialties.includes(s));
+  //   // Add price range filtering logic
+  //   return matchesSearch && matchesType && matchesSpecialties;
+  // });
 
   return (
     <div className='bg-[#ebefea] min-h-screen w-full'>
@@ -155,7 +155,7 @@ export default function Marketplace() {
 
             {/* Photographer Cards */}
             <div className="space-y-4">
-              {filteredPhotographers.map((photographer) => (
+              {/* {filteredPhotographers.map((photographer) => (
                 <div key={photographer.id} className="bg-white h-46 rounded-xl p-2 shadow-sm flex gap-6">
                   <div className="w-1/3 bg-black rounded-xl">
                     <img
@@ -190,7 +190,7 @@ export default function Marketplace() {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
 
