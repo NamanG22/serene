@@ -91,7 +91,7 @@ export default function Products(){
                         </div>
                         <div className='pt-8 flex flex-col justify-end space-y-4 text-center'>
                             <h1 className={`text-2xl`}>Real-time Availability</h1>
-                            <p className={`text-sm`}>See photographers' availability in real-time and book instantly.</p>
+                            <p className={`text-sm`}>See photographers&apos; availability in real-time and book instantly.</p>
                         </div>
                     </div>
                     <div className='relative rounded-4xl w-1/4 p-4 shadow-[0_4px_4px_rgba(0,0,0,0.50)]'>
