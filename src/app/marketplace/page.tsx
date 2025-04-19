@@ -221,7 +221,7 @@ export default function Marketplace() {
           <div className="w-1/3">
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className='flex justify-between items-center mb-4'>
-                <h2 className="text-xl font-bold">Leaderboard</h2>
+                <h2 className="text-xl">Leaderboard</h2>
                 <div className='flex items-center'>
                   <Link href='/' className='text-gray-600 text-xs'>View All</Link>
                   <FaCaretRight className='text-gray-600 text-lg' />

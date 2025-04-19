@@ -17,25 +17,19 @@ export default function Home() {
       <Header />
       <HomeHero/>
       <Browse/>
-      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-black -mt-50'></div>
-      <div className='relative w-full h-[200px] bg-gradient-to-b from-black to-transparent z-10'></div>
+      <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-[#1b0b3b] -mt-100'></div>
+      <div className='relative w-full h-[200px] bg-gradient-to-b from-[#1b0b3b] to-transparent z-10'></div>
       <Products/>
-      <div className='relative h-[680px]'>
-        <div className="absolute inset-0 w-full h-full z-0 bg-gradient-to-r from-[#3B1E54] to-[#9B7EBD]">
-          <img 
-            src="/product-bg-6.jpg" 
-            alt="browse background" 
-            className="w-full h-full object-cover object-[10%_100%]"
-          />
-          <div className="absolute inset-0" />
+      <div className='relative min-h-screen -mt-30'>
+        <div className="absolute inset-0 w-full h-full z-0 bg-white">
         </div>
-        <div className="relative flex flex-col w-full h-fit px-28 items-center justify-center pt-8">
-            <div className='w-full flex items-center mx-auto justify-center'>
+        <div className="relative flex flex-col w-full h-fit px-28 items-center justify-center pt-48">
+            <div className='w-full flex items-center mx-auto justify-center text-black'>
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl flex flex-col leading-20">
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-6xl flex flex-col leading-20">
                         <span>How it works</span>
                     </h1>
-                    <p className="mt-4 text-md">
+                    <p className="text-md">
                     We&apos;ve simplified the process of finding and booking photographers for your needs.
                     </p>
                 </div>

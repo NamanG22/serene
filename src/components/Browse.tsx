@@ -49,12 +49,12 @@ export default function Browse(){
             />
             <div className="absolute inset-0" />
           </div>
-          <div className="relative z-10 flex w-full h-full">
-            <div className='w-1/2 min-h-screen flex items-center'>
-                <div className="max-w-2xl">
-                    <div className="text-left">
+          <div className="relative z-10 flex w-full h-full items-center justify-center">
+            <div className='min-h-screen flex justify-center pt-[10%]'>
+                <div className="">
+                    <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl flex flex-col leading-20">
-                            <span>Capture</span> <span>Every Moment,</span> Your Way
+                            Capture Every Moment, Your Way
                         </h1>
                         <p className="mt-4 text-md">
                         Professional photography for every occasion and need.
@@ -62,13 +62,13 @@ export default function Browse(){
                         <p className="mt-4 text-md">
                         Find the perfect match for your specific requirements.
                         </p>
-                        <div className="mt-10 flex items-start gap-x-6">
-                        <Link href="/marketplace" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
-                            Explore marketplace
-                        </Link>
-                        <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
-                            About us
-                        </Link>
+                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                            <Link href="/marketplace" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
+                                Explore marketplace
+                            </Link>
+                            <Link href="/about" className="text-sm font-semibold leading-6 text-gray-600 border border-gray-600 rounded-3xl px-8 py-3 bg-white">
+                                About us
+                            </Link>
                         </div>
                     </div>
                 </div>
