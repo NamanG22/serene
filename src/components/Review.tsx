@@ -8,7 +8,13 @@ const indieFlower = Indie_Flower({
 
 export default function Review() {
   return (
-    <div className='relative flex bg-black min-h-screen -mt-50 review-box'>
+    <div className='relative flex bg-white min-h-screen z-10 pb-28'>
+        <div className="absolute inset-0 -top-4 w-full h-full -z-2 bg-[#AFA3CC] rounded-t-[10%]">
+        </div>
+        <div className="absolute inset-0 -top-2 w-full h-full -z-1 bg-[#5C4680] rounded-t-[10%]">
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 bg-[#1b0b3b] rounded-t-[10%]">
+        </div>
         <div className='relative w-1/2 min-h-screen flex items-center pl-28 pr-10'>
             <div className="">
                 <div className="text-left">
