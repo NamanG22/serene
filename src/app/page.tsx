@@ -18,9 +18,10 @@ export default function Home() {
       <HomeHero/>
       <div className='relative w-full h-[100px] bg-gradient-to-b from-transparent to-black z-10 -mt-25'></div>
       <Browse/>
+      {/* <div className='relative w-full h-[100px] bg-gradient-to-b from-black to-transparent z-10'></div> */}
+      <div className='relative w-full h-[100px] bg-gradient-to-b from-transparent to-black z-10 -mt-25'></div>
       <div className='relative w-full h-[100px] bg-gradient-to-b from-black to-transparent z-10'></div>
       <Review/>
-      <div className='relative w-full h-[100px] bg-gradient-to-b from-transparent to-black z-10 -mt-25'></div>
       {/* <Browse/> */}
       {/* <div className='relative w-full h-[200px] bg-gradient-to-b from-transparent to-[#1b0b3b] -mt-100'></div>
       <div className='relative w-full h-[200px] bg-gradient-to-b from-[#1b0b3b] to-transparent z-10'></div>
