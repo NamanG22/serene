@@ -13,7 +13,7 @@ export default function HomeHero(){
             </div>
 
             <div className="absolute bottom-20 isolate pt-14 self-end px-12 sm:px-16 lg:px-28">
-                <div className="mx-auto max-w-2xl">
+                {/* <div className="mx-auto max-w-2xl">
                     <div className="text-left">
                     <p className="my-4 text-sm leading-8 text-white/70">
                         by Nova
@@ -25,12 +25,6 @@ export default function HomeHero(){
                     The Visual Creator Hub — Events, Brands & More
                     </p>
                     <div className="mt-10 flex items-start gap-x-6">
-                        {/* <Link
-                        href="/marketplace"
-                        className="rounded-4xl text-lg bg-indigo-600 px-12 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                        Explore
-                        </Link> */}
                         <button 
                           onClick={() => {
                             document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
@@ -41,7 +35,7 @@ export default function HomeHero(){
                         </button>
                     </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>

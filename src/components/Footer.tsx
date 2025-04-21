@@ -9,7 +9,7 @@ const comicNeue = Comic_Neue({
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray-900 min-h-[80vh] -mt-50 px-28 pt-32">
+    <footer className="relative bg-black min-h-[80vh] px-28 pt-32">
       <div className="mx-auto w-full px-6 py-12 md:flex md:flex-col md:items-center md:justify-between lg:px-8">
         <div className={`${comicNeue.className} flex justify-center text-[40vh] -my-15 w-full`}>
           <h1>serene</h1>
