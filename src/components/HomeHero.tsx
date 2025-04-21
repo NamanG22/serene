@@ -25,16 +25,6 @@ export default function HomeHero(){
         }
     };
 
-    const images = [
-        ["/browse-bg-2.jpg","50%_50%"],
-        ["/wedding.jpg","100%_50%"],
-        ["/event.jpg","50%_50%"],
-        ["/ph.jpg","0%_20%"],
-        ["/ccs.jpg","100%_43%"],
-        ["/product.jpg","100%_70%"],
-        ["/custom.jpg","100%_30%"],
-    ];
-
     return(
         <div className='relative mt-0 w-full max-h-screen z-10'>
             <div className='w-full h-screen'>
